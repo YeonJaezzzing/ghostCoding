@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--필수는 아니나/반응형에 필요함-->
+    <title>Inherit(상속) 속성알아보기</title>
+    <style>
+        div {
+            color: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+        div span:nth-child(4) {   
+            color: olive;
+        } <!--'>'는 자식요소라는 뜻-->
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        parent
+        <span>Child Span</span>
+        <h1>Heading Element - child</h1>
+        <p class="child">
+            child Element
+            <span class="grand-child">Grand-child</span>        
+        </p>  
+        <span>child Span2</span>
+        <span>child Span3</span>
+    </div>    
+</body> <!--아무것도 올 수 없음-->
+
+</html>
