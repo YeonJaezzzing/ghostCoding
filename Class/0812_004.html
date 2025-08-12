@@ -4,15 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom tree</title>
+        <style>
+            
+            ol  li  {
+                background-color: olive;
+                font-size : 30px;
+            }
+            ul  li  {
+                background-color: gold;
+                font-size : 12px;
+            }
+
+            h1 {
+                color:red; 
+                color:blue; 
+                color:green;
+            }
+    </style>
 </head>
 <body>
-    <header><h1>CODING CAMP</h1></header>
+
+    &lt;h1&gt;태그는 가장 큰 헤딩요소이다.
+
+    <header>
+        <h1>CODING CAMP</h1>
+        <!-- 웹사이트 주요 목록(메뉴) 표시하는 시맨틱 태그 nav -->
+         <nav>
+            <ul> <!--Unordered List 순번이 없는 목록-->
+                <li><!-- Lisms List Item 이라는 뜻-->
+                <a href="./0811_001.html">About</a>
+                </li>
+                <li>
+                    <a href="./0811_002.html">Product</a>
+                </li>
+                <li>
+                    <a href="./0812_003.html">ContactUs</a>
+                </li>
+            </ul>
+         </nav>
+    </header>
+
+
     <main>
         <h2>Apple</h2>
         <p>Manggo</p>
+        <!--
+        만약에 ol이나 ul의 타입을 바꿔야한다면, html 속성을 쓰지말고,
+        CSS로 처리하도록 하는 것이 웹표준이다.
+        -->
+        <ol start="10" type="I"><!--Ordered List 순번이 있는 목록-->
+            <li>Oredered List 1
+                <ul>
+                    <li><a href="#">Sub menu 1</a></li>
+                    <li><a href="#">Sub menu 2</a></li>
+                </ul>
+            </li>
+            <li>Oredered List 2</li>
+            <li>Oredered List 3</li>
+        </ol>
     </main>
+    <!-- ol의 child인 li는 gold 배경색, uldml child인 lisms olive 배경색 넣기 -->
     <footer>
-        <p>copyrights</p>
+        <p>&copy; copyrights</p>
     </footer>
 </body>
 </html>
