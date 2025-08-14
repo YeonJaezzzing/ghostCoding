@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #4862e5;
+            color:#9cc1df;
+            background: #4862e5 url('./images/thumb_2.png') right bottom/80% auto no-repeat fixed;
+            /*background-image: url('./images/thumb_2.png');
+            background-size: 80% auto; 앞에 가로 뒤에 세로
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-attachment: fixed;*/
+            /*transparent none repeat left top/auto scroll; 기본값 셋팅, 써주지 않은 값은 기본값으로 리셋 */
+        }
+        
+        .thumb {
+            width: 240px;
+            height:170px;
+            border-radius:12px 12px 0 0;
+            overflow: hidden;
+        }
+
+        .thumb img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .thumb-ir {
+            width: 240px;
+            height:170px;
+            border-radius:12px 12px 0 0;
+            overflow: hidden;
+            outline:2px solid red;
+            margin-top:20px;
+            background-image: url('./images/toons/kosigi-wale.jpg');
+            background-size: 70px auto; /*앞에 가로 뒤에 세로*/
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+        }
+
+    .blind {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+    }
+
+    section {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+        border: 1px solid rgba(255,255,255,0.2);
+        box-sizing: border-box;
+        margin: 0 auto;
+        background-image: url('./images/thumb_1.png');
+        background-size: 200px auto; /*앞에 가로 뒤에 세로*/
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+
+ 
+    </style>
+</head>
+<body>
+    <div class="thumb">
+        <img src="./images/toons/kosigi-wale.jpg" alt="kosigi">
+    </div>
+
+    <div class="thumb-ir"> 
+        <span class="blind">illust image</span>
+    </div> 
+
+    <section>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est molestias accusamus exercitationem possimus necessitatibus deleniti reprehenderit nostrum quam fuga pariatur iste, ea, nemo nulla eius doloribus natus amet dolore? 
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur ut soluta perferendis eius perspiciatis, veniam quos. Explicabo, numquam est id dignissimos culpa cupiditate sit commodi voluptas distinctio officiis dolore!
+        Obcaecati necessitatibus ipsam tempore aspernatur accusantium soluta voluptatibus ut, ducimus fuga earum commodi itaque facere. Temporibus, maxime! Ipsum officiis saepe esse deleniti aliquam facere est, dolor reiciendis possimus fugiat sequi.
+        Nulla, facere. Reprehenderit a voluptate odio doloremque maiores ratione eligendi sapiente unde, distinctio qui explicabo tenetur mollitia soluta error placeat repellendus ab molestias voluptatum sunt velit cumque pariatur id magnam!
+        Impedit provident aut earum, ipsa tempore nobis odit voluptas animi eos cum consectetur voluptatibus amet quibusdam deleniti obcaecati repellendus at velit incidunt et eius, aperiam maiores? Natus illum quidem soluta.
+        Voluptatum, provident? Cumque perspiciatis pariatur distinctio accusantium tempora eum necessitatibus, temporibus quas iure, officia illo alias asperiores quidem, esse placeat repudiandae doloremque ipsum impedit. Non ab repellat libero aut nostrum!
+    </p>
+    </section>
+
+</body>
+</html>

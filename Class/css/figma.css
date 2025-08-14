@@ -32,4 +32,57 @@ body {
 
 /* figma_login.html */
 .all-container {
+    min-width: 272px;
+    width: calc(100%-100px);
+    max-width:400px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    height:100vh;
+    padding:200px 0 70px;
+
+    margin:0 auto ; /* 상하 좌우*/
+    /* 
+    margin-top:200px;
+    margin-left:auto;
+    margin-right:auto;
+    amrgin-bottom:0;
+     */
+}
+
+
+.slogan-container img {
+    width:100%;
+    margin-bottom:10px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.link-container a {
+  height: 42px;
+  width: 100%;
+  border-radius: 8px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  line-height: 1;
+}
+
+.link-container a:first-child {
+  background-color: #1e1e1e;
+}
+
+.link-container a:last-child {
+  border: 2px solid #fff;
+}
+
+.link-container a:hover {
+  color:gold;
 }

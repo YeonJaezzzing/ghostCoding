@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 박스 이해하기</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            display: flex;
+           justify-content: space-between;
+            align-items: flex-end;
+            /*justify-content:center; = 콘텐츠 가운데
+              align-items:flex-start; = 교차축방향 시작점에서 시작
+              align-items:center; = 교차축방향 중앙지점
+              align-items:flex-end; = 교차축방향 끝지점
+              align-items:stretch; = (기본값) 교차축방향의 부모크기만큼
+              아이템 늘리기*/
+        }
+
+        .item1 {
+            background-color: lightcoral;
+        }
+
+        .item2 {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="item1">ITEM 1</div>
+       <div class="item2">ITEM 2</div>
+    </div>
+</body>
+</html>
