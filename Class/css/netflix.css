@@ -1,10 +1,17 @@
 @charset "utf-8";
 body {
-  background: linear-gradient(180deg,rgba(0, 6, 8, 1) 0%, rgba(99, 24, 43, 1) 21%, rgba(99, 24, 43, 1) 68%, rgba(99, 55, 60, 1) 100%) no-repeat fixed;
-  background-image: url('../images/netflex_bg_img.jpg');
+  background: 
+    linear-gradient(
+      rgba(0, 6, 8, 0.9),
+      rgba(99, 24, 43, 0.7) 
+    ),
+    url('../images/netflex_bg_img.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  
   color: #fff;
   font-family: sans-serif;
-  gap:100px;
+  gap: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
