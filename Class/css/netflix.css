@@ -4,10 +4,9 @@ body {
     /* 1. 딤 그라디언트 레이어 */
     linear-gradient(
       180deg,
-      rgba(0, 6, 8, 0.85) 0%,        /* 검정에 가까움 */
-      rgba(99, 24, 43, 0.65) 21%,    /* 짙은 와인색 */
-      rgba(99, 24, 43, 0.65) 68%,    
-      rgba(99, 55, 60, 0.85) 100%    /* 붉은 톤 */
+      rgba(0, 6, 8, 0.85) 20%,     
+      rgba(99, 24, 43, 0.65) 40%,  
+      rgba(99, 24, 43, 0.65) 80%    
     ),
   url('../images/netflex_bg_img.jpg');
   background-size: cover, cover;
