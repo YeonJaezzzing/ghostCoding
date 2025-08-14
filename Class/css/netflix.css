@@ -95,6 +95,10 @@ select {
 input {
     width: 412px;
     height: 56px;
+    background-color: black;
+     outline:1px solid #6e6868;
+     border-radius: 8px;
+
 }
 
 .start_btn {
