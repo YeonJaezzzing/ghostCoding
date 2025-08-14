@@ -4,11 +4,10 @@ body {
   background-image: url('../images/netflex_bg_img.jpg');
   color: #fff;
   font-family: sans-serif;
-   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap:100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -95,4 +94,18 @@ select {
 
 input {
     width: 412px;
+    height: 56px;
 }
+
+.start_btn {
+    width: 167px;
+    height: 56px;
+    font-size: 1.5rem;
+}
+
+.emailbar {
+display: flex;
+  justify-content: center;
+  gap:10px;
+}
+
