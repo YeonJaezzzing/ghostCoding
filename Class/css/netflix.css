@@ -1,7 +1,6 @@
 @charset "utf-8";
 body {
   background-image:
-    /* 1. 딤 그라디언트 레이어 */
     linear-gradient(
       180deg,
       rgba(0, 6, 8, 0.85) 20%,     
