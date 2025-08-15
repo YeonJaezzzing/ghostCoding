@@ -20,6 +20,16 @@ body {
   justify-content: space-between;
 }
 
+.bottom_lolem { position: relative; z-index: 2; }
+
+
+.bar {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
 header {
     display: flex;
     align-items: flex-start;
@@ -32,10 +42,10 @@ header {
  margin:20px;
 }
 
-span {
+.navi_btn {
     margin:20px;
-    display: flex;
-    flex-direction:start-end;
+    display: flex; 
+    gap:8px;
 }
 
 button {
@@ -44,6 +54,7 @@ button {
     height: 32px;
     background-color: red;
     border-radius: 8px;
+    outline:1px solid red;
     display:flex;
    justify-content:center;
    align-items:center;
@@ -54,19 +65,21 @@ button {
 }
 
 select {
-    color: #fff;
+  color: #fff;
   height: 32px;
   width: 124px;
   border-radius: 8px;
   background-color: black;
   outline:1px solid #6e6868;
-  justify-content: center;
-  align-items:center;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: -0.4px;
   line-height: 1;
-  background-image: url('netflix_lang_icon.svg');
+  background-image: url('../images/netflix_lang_icon.svg');
+  background-repeat: no-repeat;
+  background-position: left 8px center;
+  background-size: 16px auto;
+  Padding-left:28px;
 }
 
 .center_lolem {
@@ -102,23 +115,28 @@ select {
     line-height: 1.5;
 }
 
-input {
-    width: 412px;
-    height: 56px;
-    background-color: black;
-     outline:1px solid #6e6868;
-     border-radius: 8px;
-
+.bar input[type="email"] {
+  flex: 1 1 auto;
+  width: 412px;
+  height: 56px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #6e6868;
+  margin-top:15px;
+  background: #000;
+  color: #fff;
+  position: relative;
+  z-index: 3;          /* 오버레이보다 위 */
+  pointer-events: auto;/* 혹시 부모가 none인 경우 대비 */
 }
 
 .start_btn {
     width: 167px;
     height: 56px;
     font-size: 1.5rem;
+    margin-top:15px;
 }
 
-.emailbar {
-display: flex;
-  justify-content: center;
-}
+
+
 

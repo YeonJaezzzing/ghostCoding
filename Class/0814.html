@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root {
+            --primary: #d81e27;
+            --title: 56px;
+        }
+
+        html{
+            font: size 16px;
+        }
+    
         body {
             background-color: #4862e5;
             color:#9cc1df;
@@ -16,7 +25,7 @@
             background-attachment: fixed;*/
             /*transparent none repeat left top/auto scroll; 기본값 셋팅, 써주지 않은 값은 기본값으로 리셋 */
         }
-        
+
         .thumb {
             width: 240px;
             height:170px;
@@ -65,11 +74,26 @@
         background-position: right bottom;
     }
 
+    .title {
+        color:var(--primary);
+        font-size: var(var(--title));
+    }
 
- 
+    em {
+        font-size: 1rem; /*root(이문서의 최상위 태그(htiml)*/
+    }
+
+    i{
+        font-size:1em; /*font-size:100%*/
+    }
     </style>
 </head>
+
 <body>
+    <em>Hello, world</em>
+    <i>World</i>
+    <hr>
+
     <div class="thumb">
         <img src="./images/toons/kosigi-wale.jpg" alt="kosigi">
     </div>
@@ -77,6 +101,8 @@
     <div class="thumb-ir"> 
         <span class="blind">illust image</span>
     </div> 
+
+    <h1 class="title">Heading</h1>
 
     <section>
      <p>
