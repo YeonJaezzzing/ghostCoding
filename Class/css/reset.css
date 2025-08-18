@@ -27,3 +27,11 @@
         margin: -1px;
         overflow: hidden;
     }
+
+    select, 
+    button,
+    input {
+        border:none;
+        background-color: transparent;
+        color: inherit;
+    }
