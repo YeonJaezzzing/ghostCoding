@@ -25,14 +25,11 @@
         </div>
     </div>
     <script>
-        const cardBox = document.querySelector('.card-container');
-        const btns =  document.querySelectorAll('.tag-container li')
-       btn[0].addEventListener('mouseenter', () => {
-        btns.classList.add('hover')
-       })
-       btn[0].addEventListener('mouseleave', () => {
-        btns.classList.remove('hover')
-       })
-     </script>
-</body>
+       const items = document.querySelectorAll('.tag-container li');
+        items.forEach(li => {
+        li.addEventListener('mouseenter', () => li.classList.add('hover'));
+        li.addEventListener('mouseleave', () => li.classList.remove('hover'));
+        });
+    </script>
+    </body>
 </html>
