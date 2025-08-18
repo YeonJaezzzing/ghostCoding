@@ -81,7 +81,7 @@
     line-height: normal;
 }
 
-.hover li {
+.tag-container .hover li {
     display: flex;
     width: 68px;
     height: 24px;
@@ -93,8 +93,8 @@
     background: rgba(161, 161, 161, 0.24);
 }
 
-.hover a {
-    color: #000;
+.tag-container .hover a {
+    color: red;
     font-family: Inter;
     font-size: 12px;
     font-style: normal;

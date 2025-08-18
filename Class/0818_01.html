@@ -26,10 +26,13 @@
     </div>
     <script>
         const cardBox = document.querySelector('.card-container');
-        const btn = document.getElementById('tag-container');
-        btn.addEventListener('hover',()=>{
-            let status = btn.classList.contains('hover');
-        }
+        const btns =  document.querySelectorAll('.tag-container li')
+       btn[0].addEventListener('mouseenter', () => {
+        btns.classList.add('hover')
+       })
+       btn[0].addEventListener('mouseleave', () => {
+        btns.classList.remove('hover')
+       })
      </script>
 </body>
 </html>
