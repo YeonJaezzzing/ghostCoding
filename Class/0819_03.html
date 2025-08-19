@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table resume</title>
+    <link rel="stylesheet" href="./css/reset.css">
+       <style>
+        caption h1 {
+            font-size: 48px;
+            margin: 40px auto;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+        }
+
+        caption p {
+            font-size: 15px;
+            margin: 10px auto;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .tBox th[scope="row"] {
+            background-color: #f3f3f3;
+        }
+
+        .tBox td {
+            text-align:left;
+        }
+
+        .tBox td:last-child{
+            border-right: 0;
+        }
+
+        .tBox td:first-child{
+            border-left: 0;
+        }
+
+       .tBox {
+        font-size: 15px;
+        margin: 20px;
+        border-top: 3px solid black;
+        border-bottom: 2px solid gray;
+        }
+
+        .tBox td[rowspan] {
+            text-align: center;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <table class="tBox">
+        <caption class="text">
+            <h1>RESUME</h1>
+            <p>기본정보</p>
+        </caption>
+        <colgroup>
+            <col style="width:120px">
+            <col style="width:100px">
+            <col>
+            <col style="width:100px">
+            <col>
+        </colgroup>
+        <tr> <!--table row'-->
+            <td rowspan="4">사진</td>
+            <th scope="row">이름</th> <!--table data-->
+            <td>Hong gil dong</td>
+            <th scope="row">생년월일</th>
+            <td>1990.01.01</td>
+        </tr>
+            <tr> <!--table row'-->
+            <th scope="row">전화</th> <!--table data-->
+            <td>010-1234-5678</td>
+            <th scope="row">이메일</th>
+            <td>hong@gmail.com</td>
+        </tr>
+            <tr> <!--table row'-->
+            <th scope="row">주소</th> <!--table data-->
+            <td colspan="3">Seoul,Korea</td>
+        </tr>
+            <tr> <!--table row'-->
+            <th scope="row">Github</th> <!--table data-->
+            <td>https://github.com/ghost/ghost.resume.app/</td>
+            <th scope="row">Profile</th>
+            <td>https://hongdev.dev</td>
+        </tr>
+
+</body>
+
+</html>

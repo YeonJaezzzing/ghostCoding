@@ -37,6 +37,16 @@
     }
 
 
-    td {
+    td,th {
         border:1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+    }
+
+    table {
+        border-spacing: 10px;
+        border-collapse: collapse;
+        table-layout: fixed;
+        overflow-wrap: break-word;
+
     }
