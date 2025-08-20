@@ -54,7 +54,6 @@ button {
     height: 32px;
     background-color: red;
     border-radius: 8px;
-    outline:1px solid red;
     display:flex;
    justify-content:center;
    align-items:center;
@@ -137,6 +136,53 @@ select {
     margin-top:15px;
 }
 
+.box1 {
+  width:732px;
+  height: 75.66px;
+  margin:16px auto;
+  padding:0.5rem 1.5rem;
+  display:flex;
+  background:linear-gradient(90deg,rgba(69, 31, 130, 1) 0%, rgba(57, 34, 108, 1) 15%, rgba(40, 39, 79, 1) 30%, rgba(39, 39, 77, 1) 99%);
+  border-radius: 12px;
+  align-items: left;
+  flex-direction: column;
+  gap:5px;
+  translate:0 -50%;
+  transition: 0.4s;
+}
 
+.box1 p{
+  margin-top: 0;
+}
+
+.box h3 {
+  margin-bottom: 8px;
+}
+
+.box1 .morebtn {
+  width: 132.5px;
+  height: 40px;
+  font-family: inherit;
+  margin:0;
+  opacity: 1;
+  line-height: 1;
+  user-select: none;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-self: self-end;
+  background-color: rgb(41, 41, 41,0.7);
+  font-size: 13px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top:30px;
+}
+
+.box1:hover {
+  background:linear-gradient(90deg,rgba(69, 31, 130, 1) 70%, rgba(57, 34, 108, 1) 100%, rgba(40, 39, 79, 1) 39%, rgba(39, 39, 77, 1) 8%)
+}
 
 
