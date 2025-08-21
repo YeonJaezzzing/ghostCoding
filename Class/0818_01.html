@@ -11,8 +11,12 @@
     <div class="card-container">
         <div class="thumb">
             <img src="./images/card_thumb_0.jpg" alt="">
+            <div class="dimm"></div>
         </div>
         <div class="contents">
+            <button type=button class="btn_profile">
+                <img src="./images/thumb_1.png" alt="프로필">
+            </button>
             <strong>Hello World !</strong>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta in eos aperiam veritatis maiores officiis nulla enim rem quibusdam illum expedita ducimus, vel eligendi eius quae perferendis maxime vero saepe.                
             </p>
@@ -24,7 +28,12 @@
             </ul>
         </div>
     </div>
-    <script>
+    <a href="#" class="btn_top">TOP</a>
+    <div class="dimm"></div>
+    <div class="modal">
+        MODAL
+    </div>
+     <script>
        const items = document.querySelectorAll('.tag-container li');
         items.forEach(li => {
         li.addEventListener('mouseenter', () => li.classList.add('hover'));

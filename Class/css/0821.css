@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+form {
+    background-color: #f3f3f3;
+    width:calc(250px + 16px + 16px);
+    height: calc(48px + 48px + 16px + 16px + 16px + 32px);
+}
+
+form input[type=search] {
+    background-color: #fff;
+    background-image: url(../images/icons/search.svg);
+    background-repeat: no-repeat;
+    outline:1px solid rgb(128, 128, 128,0.7);
+    border-radius: 8px;
+    width:250px;
+    height: 48px;
+    margin:16px auto;
+    padding:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 52px;
+}
+
+form button[type=submit] {
+    background-color: rgb(10, 222, 237);
+    border-radius: 8px;
+    width: 250px;
+    height: 48px;
+    margin:16px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 16px;
+    font-style: gray;
+}
