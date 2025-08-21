@@ -4,6 +4,8 @@ form {
     background-color: #f3f3f3;
     width:calc(250px + 16px + 16px);
     height: calc(48px + 48px + 16px + 16px + 16px + 32px);
+    box-shadow: 15px 15px 0 skyblue;
+    margin: 0 auto;
 }
 
 form input[type=search] {
@@ -22,6 +24,12 @@ form input[type=search] {
     padding-left: 52px;
 }
 
+input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color:gray;
+}
+
 form button[type=submit] {
     background-color: rgb(10, 222, 237);
     border-radius: 8px;
@@ -38,5 +46,13 @@ form a {
     align-items: flex-end;
     justify-content: flex-end;
     margin-right: 16px;
-    font-style: gray;
+    color: gray;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover{
+    scale: 1.02;
 }
