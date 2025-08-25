@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver 회원가입</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <h1>네이버</h1>
+    <div class="account inputbox">
+    <input type="checkbox" id="subject-1" name="subject">
+    <label for="subject-1">실명 인증된 아이디로 가입</label><br>
+
+    <input type="text" id="idbox" placeholder="아이디">
+    <label for="idbox">@naver.com</label><br>
+    <input type="password" id="pwbox" placeholder="비밀번호">
+    <label for="pwbox"></label>
+        <button type="button">비밀번호 보기</button>
+    </label><br>
+        <input type="email" required
+        placeholder="[선택]이메일주소 (비밀번호 찾기 등 본인 확인용)">
+    </div>
+    <div class="cdd">
+        <input type="text" id="name" placeholder="이름"><br>
+        <input type="text" id="birthday" placeholder="생년월일 8자리"><br>
+        <label for="phone-check">
+        <button type="button">통신사 선택</button>
+        <select>
+            <option>SKT</option>
+            <option>SKT알뜰폰</option>
+            <option>KT</option>
+            <option>KT알뜰폰</option>
+            <option>LG</option>
+            <option>Lg U+알뜰폰</option>
+        </select>
+
+     </label><br>
+        <label>
+            <input type="radio" name="gender" checked value="woman">
+            <span>여자</span></label>
+        <label>
+            <input type="radio" name="gender" value="man">
+            <span>남자</span></label><br>
+
+        <label>
+            <input type="radio" name="foreign" checked value="korean">
+            <span>내국인</span></label>
+        <label>
+            <input type="radio" name="foreign" value="stranger">
+            <span>외국인</span></label>
+    </div>
+</body>
+
+</html>

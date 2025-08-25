@@ -251,5 +251,117 @@ body {
   background: url("../images/sns-naver.svg") no-repeat right 10px bottom 15px/40px auto;
 }
 
+.faq-list {
+  margin-top: 100px;
+  max-width: 860px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;         
+  justify-content: flex-start;  
+  gap: 5px;                    
+}
 
+.faq-list h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
 
+.faq-list details summary {
+  width: 100%;
+  padding: 24px;
+  font-size:18px;
+  color:#fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.faq-list details img {
+  width: 24px;
+  height:24px;
+  filter: brightness(0) invert(1);
+}
+
+.faq-list details .faq-box {
+  width: 100%;
+  padding: 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3b3b3b;
+}
+
+.faq-list details {
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3b3b3b;
+  background: #2a2a2a; 
+  overflow: hidden; 
+  margin-bottom: 12px;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  box-sizing: border-box;
+  margin: 0;                    
+}
+
+.faq-list summary .down{ 
+  display:none; }
+
+.faq-list details:click summary .up{ display:none; }
+.faq-list details:click summary .down{ display:inline-block; }
+
+.faq-list details[open] summary .up{ display:none; }
+.faq-list details[open] summary .down{ display:inline-block; }
+
+.faq-list details:has(> summary:click){
+  border-color: #4a4a4a;
+}
+
+.bottom_lolem2 { 
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article3 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.faq-menu-container span {
+  font-size:16px;
+  color:rgb(203, 201, 201);
+}
+
+.faq-menu-list {
+  margin-top:50px;
+}
+
+.list-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.list-line {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-line li a {
+  color:rgb(203, 201, 201);
+  font-size:14px;
+  text-decoration:none;
+}
+
+.navi_btn2 {
+  margin-top:50px;
+}

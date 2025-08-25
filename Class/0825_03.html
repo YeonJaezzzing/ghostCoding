@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="과목선택">
+    <datalist id="campus_subject">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JAVASCRIPT</option>
+    </datalist>
+        datalist에서는 Option 태그의 Value속성만 존재해도
+        무방하나, select태그에서는 반드시 Option 태그를
+        종료해줘야 한다.
+        <datalist id="campus_subject2">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JAVASCRIPT">
+    </datalist>
+</body>
+
+</html>

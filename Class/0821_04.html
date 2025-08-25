@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        input[name="subject"] {}
+    </style>
+</head>
+
+<body>
+    <p>아래에서 좋아하는 과목을 모두선택하세요</p>
+    <!--명시적인 레이블-->
+    <input type="checkbox" id="subject-1" name="subject">
+    ㅊ
+
+    <input type="checkbox" id="subject-2" name="subject">
+    <label for="subject-2">CSS</label><br>
+
+    <input type="checkbox" id="subject-3" name="subject">
+    <label for="subject-3">JAVASCRIPT</label>
+
+    <p>자동로그인 설정하기</p>
+    <!--암묵적인 레이블-->
+    <label><input type="checkbox">자동로그인</label>
+
+    <!--명시적인 레이블-->
+    <input type="checkbox" id="autologin">
+    <label for="autologin">자동로그인</label>
+
+    <p>평가를 해주세요</p>
+    <label><input type="radio" name="judgement">좋아요</label>
+    <label><input type="radio" name="judgement">싫어요</label>
+
+    <p>성별을 선택해 주세요</p>
+    <label><input type="radio" name="gender" checked value="woman"><span>여자</span></label>
+    <label><input type="radio" name="gender" value="man"><span>남자</span></label>
+    <label><input type="radio" name="gender" value="etc"><span>기타</span></label>
+
+    <p>메모를 남겨주세요</p>
+    <label for="memo">MEMO입력</label>
+    <input type="text" id="memo" name="memo" placeholder="메모를 입력하세요">
+</body>
+
+</html>

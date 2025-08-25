@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver 회원가입</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <h1><a href="/">NAVER</a></h1>
+    <form name="auth">
+        <label>
+        <input type="checkbox">
+        <span>실명인증된 아이디로 가입</span>
+        </label>
+
+        <input type="text" name="user_id" 
+        placeholder="아이디" required>
+        <input type="password" name="user_pw" 
+        placeholder="비밀번호" required>
+        <p>
+        <lable for="user_email">[선택]</lable>
+        <input type="email" id="user_email">
+        </p>
+
+        <input type="text" name="user_name" required>
+        <input text="text" name="user_birth" placeholder="생년월일 8자리" 
+            maxlength="8" required>
+
+        <button type="button">통신사선택</button>
+        <input type="button" value="통신사선택">
+        <ul>
+            <li>
+                <input type="radio" name="gender" id="gender_man">
+                <label for="gender_man">남자</label>
+            </li>
+             <li>
+                <input type="radio" name="gender" id="gender_woman">
+                <label for="gender_woman">여자</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="radio" name="korean"
+                id="korean_y" checked>
+                <lable for="korean_y">내국인</lable>
+            </li>
+            <li>
+                <input type="radio" name="korean"
+                id="korean_n" checked>
+                <lable for="korean_n">외국인</lable> 
+            </li>
+        </ul>
+
+        <button type="submit">인증요청</button>
+        <input type="submit" value="인증요청">
+\
+
+    </form>
+    
+ 
+
+    </body>
+
+</html>
