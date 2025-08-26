@@ -30,7 +30,7 @@
                 </button>
             </li>
             <li>
-                <button type="button">
+                <button type="button" class="profile-icon">
                     <img src="./images/icons/cat.png" alt="">
                     <span class="blind">프로필</span>
                 </button>
@@ -43,30 +43,94 @@
             <img src="./images/google_logo.svg" alt="">
         </h1>
         <div class="search-container">
-            <input type="search" class="search-bar" placeholder="Google 검색 또는 URL 입력">
+        <form class="search-form">
+            <input 
+            type="search" 
+            class="search-bar" 
+            placeholder="Google 검색 또는 URL 입력"
+            >
+            <div class="icon-bar">
             <a href="#">
-                <img src="./images/icons/mic.svg" alt="">
+                <img src="./images/icons/mic.svg" alt="음성 검색">
             </a>
             <a href="#">
-                <img src="./images/icons/camera.svg" alt="">
+                <img src="./images/icons/camera.svg" alt="이미지 검색">
             </a>
+            </div>
+        </form>
         </div>
 
-
-
-          <h2 class="blind">자주방문하는사이트</h2>
+        <div class="link-container">
+          <h2 class="blind">자주방문하는사이트</h2> 
           <ul>
             <li>
                 <a href="#">
-                    동그란 이미지
-                    네이버
+                    <div class="snsimg">
+                        <img src="./images/icons/naver.png" alt="naver">
+                    </div>
+                    <span class="snsname">네이버</span>
                 </a>
                 <button type="button">
-                    <span class="">
-                    </span>
+                    <img src="./images/icons/menumore.png" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="snsimg">
+                        <img src="./images/icons/netflixicon.png" alt="netflix">
+                    </div>
+                    <span class="snsname">Netflix</span>
+                </a>
+                <button type="button">
+                    <img src="./images/icons/menumore.png" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="snsimg">
+                        <img src="./images/icons/notefolio.png" alt="notefolio">
+                    </div>
+                    <span class="snsname">Notefolio</span>
+                </a>
+                <button type="button">
+                    <img src="./images/icons/menumore.png" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="snsimg">
+                        <img src="./images/sns-icon-2024-svg/insta-1.svg" alt="insta">
+                    </div>
+                    <span class="snsname">instagram</span>
+                </a>
+                <button type="button">
+                    <img src="./images/icons/menumore.png" alt="">
+                </button>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="snsimg">
+                        <img src="./images/sns-icon-2024-svg/facebook-1.svg" alt="facebook">
+                    </div>
+                    <span class="snsname">Facebook</span>
+                </a>
+                <button type="button">
+                    <img src="./images/icons/menumore.png" alt="">
+                </button>
+            </li>
+              <li>
+                <a href="#">
+                    <div class="snsimg">
+                        <img src="../Class/images/sns-icon-2024-svg/youtube-1.svg" alt="youtube">
+                    </div>
+                    <span class="snsname">youtube</span>
+                </a>
+                <button type="button">
+                    <img src="./images/icons/menumore.png" alt="">
                 </button>
             </li>
           </ul>
+          </div>
 
     </div>
 </body>
