@@ -56,5 +56,9 @@
 
     }
 
+    ul,ol,summary {
+        list-style:none;
+    }
+
     
 
