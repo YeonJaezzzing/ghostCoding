@@ -1,22 +1,22 @@
 @charset "utf-8";
 
+.all-container {
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+}
 
-.video_container {
+div .video_container {
     position: absolute;
     z-index: -1;
     width:100%;
     height: 100%;
-    background-image: url('../images/google_bg_img.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .page_header {
     width:100%;
     margin:30px auto;
     padding:0 1rem;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,6 +41,11 @@
 
 .slogan-container h2 {
     font-size: 4em;
+    font-weight: 700;
+}
+
+.slogan-container p {
+    font-weight: 500;
 }
 
 .poem-stroke {
