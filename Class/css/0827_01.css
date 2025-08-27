@@ -1,15 +1,13 @@
 @charset "utf-8";
 
-html,body {
-    width:100%;
-    height:100%;
-    overflow: hidden;
-}
 
 .video_container {
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height: 100%;
     background-image: url('../images/google_bg_img.png');
-    background-size: cover;
-    background-attachment: fixed;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -19,13 +17,11 @@ html,body {
     margin:30px auto;
     padding:0 1rem;
     color: white;
-    }
-
-.menu-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+    }
+
 
 .menu-bar ul {
     display: flex;
@@ -33,7 +29,7 @@ html,body {
     gap:20px;
 }
 
-.menu-bar .darkmode {
+.menu-bar .btn-mode {
     filter: brightness(0) invert(1);
 }
 
@@ -43,13 +39,14 @@ html,body {
     padding:56px 0 0;
 }
 
-.slogan-container h1 {
+.slogan-container h2 {
     font-size: 4em;
 }
 
 .poem-stroke {
-    width: 200px;
-    height: 100px;
+    width: 50px;
+    height: 20px;
+    margin: 20px auto;
     background: transparent;   
     border-top: 1px solid #fff; 
 }
@@ -58,5 +55,8 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 200px auto;
+    width: 48px;
+    height: 48px;
 }
 
