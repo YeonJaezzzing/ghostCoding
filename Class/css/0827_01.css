@@ -1,26 +1,73 @@
 @charset "utf-8";
 
-.all-container {
-    color: white;
-    font-family: sans-serif;
-    position: relative;
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
 }
 
-div .video_container {
-    position: absolute;
-    z-index: -1;
-    width:100%;
-    height: 100%;
+a{
+    transition: 0.5s;
 }
+
+/*init*/
+:root {
+--light-cover: rgba(0,0,0,0.5);
+--light-text:white;
+--hover:gold;
+}
+
+.all-container {
+    color: var(--light-text);
+    font-family: sans-serif;
+}
+
+.video_container {
+    position: absolute;
+    /*inset:0; 0 10px 20px 30px 상우하좌*/
+    left:0;top:0;bottom:0;right:0;
+    z-index: -1;
+}
+
+.video_container::after {
+    content:'';
+    position:absolute;
+    left:0;right: 0;bottom: 0;top: 0;
+    background-color: rgb(0, 0, 0,0.5);
+}
+
+.video_container video {
+    position:absolute;
+    left:50%;
+    top:0;
+    translate: -50% 0;
+    height: 100%;
+    width: 100%;
+    min-height:100vh;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
 
 .page_header {
     width:100%;
-    margin:30px auto;
-    padding:0 1rem;
+    max-width: 1280px;
+    padding: 30px 30px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     }
+
+/*.page_header .inner{
+    width:100%;
+    max-width: 1280px;
+    padding:0 40px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }*/
 
 
 .menu-bar ul {
@@ -29,18 +76,29 @@ div .video_container {
     gap:20px;
 }
 
-.menu-bar .btn-mode {
-    filter: brightness(0) invert(1);
+
+.svg-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.svg-icon .moon {
+  fill: #fff;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .slogan-container {
     text-align: center;
     color: white;
-    padding:56px 0 0;
+    position: absolute;
+    left:50%;
+    top:50%;
+    translate: -50% -50%;
 }
 
 .slogan-container h2 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
 }
 
@@ -56,12 +114,47 @@ div .video_container {
     border-top: 1px solid #fff; 
 }
 
+/* .slogan-container h2::after {
+content:"";
+position:absolute;
+bottom:-2rem;
+left:50%;
+translate:-50% 0;
+width:30px;
+height:1px;
+background-color:#fff 
+*/
+
 .ico-scroll {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 200px auto;
+    position: absolute;
+    left:50%;
+    bottom:50px;
+    translate:-50% 0;
     width: 48px;
     height: 48px;
+    opacity: 0.5;
 }
+
+.ico-scroll {
+    /*animation-name:pingpong;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     짝수번째 카운트는 거꾸로 진행
+    animation-fill-mode:both;*/
+
+    animation: pingpong 0.6s ease-out infinite alternate both;
+}
+
+.ico-scroll:hover {
+     animation-play-state: paused;
+}
+
+@keyframes pingpong {
+    from {translate: 0 0;}
+    to {translate: 0 -15px;}
+}
+
+
 
