@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+
+        /*
+        Mobile first
+        @media all and (min-width:375px) {375px 이상일때} */
+
+        @media all and (max-width:1200px) {
+            /*1200px 이하에선...*/
+            body {
+                background-color: tomato;
+            }
+        }
+
+        @media all and (max-width:1024px) {
+            body {
+                background-color: olive;
+            }
+
+            .container li:last-child {
+                width:90%;
+            }
+
+            .container li {
+            width:calc((100% - 20px) / 3);
+             }
+        }
+
+        /*Mobile*/
+
+        @media all and (max-width:764px) {
+            body {
+                background-color: aqua;
+            }
+
+            .btn_ham{
+                display: flex;
+            }
+
+            .gnb-container {
+                position:fixed;
+                right:-310px;
+                top:0;
+                height: 100vh;
+                width:300px;
+            }
+
+            .gnd-container ul {
+                display: block;
+                height: auto;
+                padding-top:100px;
+            }
+
+            .btn_close {
+                display:inline-block;
+            }
+        }
+
+
+
+        @media all and (max-width:480px) {
+            body {
+                background-color: dodgerblue;
+            }
+
+            .container ul {
+                flex-direction:column;
+            
+            }
+
+            .container li {
+                width:100%;
+            }
+        }
+
+        @media all and (max-width:375px) {
+            body {
+                background-color:blueviolet;
+        }
+    }
+
+        /* breakpoint 764, 480, 375 */
