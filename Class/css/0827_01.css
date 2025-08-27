@@ -54,3 +54,9 @@ html,body {
     border-top: 1px solid #fff; 
 }
 
+.ico-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
