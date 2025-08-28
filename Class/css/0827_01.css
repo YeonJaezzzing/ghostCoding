@@ -143,6 +143,7 @@ background-color:#fff
     animation-direction: alternate;
      짝수번째 카운트는 거꾸로 진행
     animation-fill-mode:both;*/
+    /*animation-name,animation-dration 생략불가 */
 
     animation: pingpong 0.6s ease-out infinite alternate both;
 }
