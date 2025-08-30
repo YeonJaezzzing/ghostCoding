@@ -1,92 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
 </head>
-
 <body>
-    <div class="all-container">
-        <!-- 민트 스트로크 (배경 상단) -->
-        <div class="top-container" aria-hidden="true">
-            <img class="mint-stroke" src="./images/mintstroke.svg" alt="" />
-         </div>
+  <div class="all-container">
+    <div class="top-container" aria-hidden="true">
+      <img class="mint-stroke" src="./images/pink_glass.svg" alt="">
+    </div>
 
+    <header class="page-header">
+      <div class="container">
+        <span class="brand">Jang Yeon Jae</span>
+      </div>
+    </header>
 
-        <!-- 헤더 -->
-        <header class="page-header">
-        <div class="container">
-            <span class="brand">Jang Yeon Jae</span>
+    <section class="hero">
+      <div class="container">
+        <div class="glass-hero">
+          <h1>A Product Designer<br/>Bridging Data, Experience, and Design.</h1>
+          <p class="sub">데이터와 경험을 디자인으로 연결하는 프로덕트 디자이너</p>
         </div>
-        </header>
+      </div>
+    </section>
 
-         <!-- 히어로(글라스) -->
-        <section class="hero">
-         <div class="container">
-                <div class="glass-hero">
-                    <h1>A Product Designer<br/>Bridging Data, Experience, and Design.</h1>
-                    <p class="sub">데이터와 경험을 디자인으로 연결하는 프로덕트 디자이너</p>
-                </div>
-            </div>
-        </section>
+    <nav class="tabs" aria-label="Sections">
+      <div class="container">
+        <ul>
+          <li class="active"><button type="button" data-target="uiux">UI/UX</button></li>
+          <li><button type="button" data-target="contents">Contents</button></li>
+          <li><button type="button" data-target="profile">Profile</button></li>
+          <li><button type="button" data-target="contact">Contact</button></li>
+        </ul>
+      </div>
+    </nav>
 
-        <!-- 탭 내비 -->
-        <nav class="tabs">
-            <div class="container">
-                <ul>
-                <li class="active"><button type="button">UI/UX</button></li>
-                <li><button type="button">Contents</button></li>
-                <li><button type="button">Profile</button></li>
-                <li><button type="button">Contact</button></li>
-                </ul>
-                <span class="tab-underline"></span>
-            </div>
-        </nav>
+    <section class="carousel" aria-label="Projects">
+      <div class="container">
+        <button class="nav-arrow prev" type="button" aria-label="Previous"><img src="./images/next_left.svg" alt=""></button>
+        <button class="nav-arrow next" type="button" aria-label="Next"><img src="./images/next_right.svg" alt=""></button>
 
-            <!-- 카드 캐러셀 -->
-            <section class="carousel">
-                <div class="container">
-                    <button class="nav-arrow prev" aria-label="prev">
-                         <img src="./images/next_left.svg" alt="left-arrow">
-                    </button>
-                    <button class="nav-arrow next" aria-label="next">
-                        <img src="./images/next_right.svg" alt="right-arrow">
-                    </button>
-
-                    <div class="cards">
-                    <article class="card card-left">
-                        <h3>Welcome</h3>
-                    </article>
-                    <article class="card card-center">
-                        <h3>UIUX</h3>
-                    </article>
-                    <article class="card card-right">
-                        <h3>Contents</h3>
-                    </article>
-                    <article class="card card-far">
-                        <h3>Profile</h3>
-                    </article>
-                    </div>
-
-                </div>
-            </section>
+        <div class="cards">
+          <article class="card card-left"   data-key="uiux"><h3>UI/UX</h3></article>
+          <article class="card card-center" data-key="contents"><h3>Contents</h3></article>
+          <article class="card card-right"  data-key="profile"><h3>Profile</h3></article>
+          <article class="card card-far"    data-key="contact"><h3>Contact</h3></article>
         </div>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        const tabs = document.querySelectorAll(".tabs ul li");
+      </div>
+    </section>
+  </div>
 
-        tabs.forEach(tab => {
-            tab.addEventListener("click", function() {
-            // 모든 탭에서 active 제거
-            tabs.forEach(t => t.classList.remove("active"));
-            // 클릭한 탭에만 active 추가
-            this.classList.add("active");
-            });
-        });
-        });
-        </script>
-    </body>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const root = document.querySelector('.all-container');
+    const tabs = [...document.querySelectorAll('.tabs li')];
+    const cards = [...document.querySelectorAll('.cards .card')];
+    const heroTitle = document.querySelector('.glass-hero h1');
+    const heroSub   = document.querySelector('.glass-hero .sub');
+    const topImg    = document.querySelector('.top-container .mint-stroke');
+
+    const THEMES = {
+      uiux:     { heroTitle: "A Product Designer\nBridging Data, Experience, and Design.", heroSub: "데이터와 경험을 디자인으로 연결하는 프로덕트 디자이너", glassImg: "./images/pink_glass.svg",   rootClass: "theme-uiux" },
+      contents: { heroTitle: "Contents that Speak,\nSystems that Scale.",                   heroSub: "브랜드 경험을 확장하는 콘텐츠 아키텍처",            glassImg: "./images/mint_glass.svg",   rootClass: "theme-contents" },
+      profile:  { heroTitle: "Profile & Works\nSystems that Scale.",                        heroSub: "프로젝트 스냅샷과 역할, 임팩트",                    glassImg: "./images/blue_glass.svg",   rootClass: "theme-profile" },
+      contact:  { heroTitle: "Let’s Build Something\nSystems that Scale..",                 heroSub: "프로젝트/협업 문의 환영합니다",                      glassImg: "./images/purple_glass.svg", rootClass: "theme-contact" }
+    };
+
+    const MODALS = {
+      uiux:     { title: "UI/UX",     html: "<p>UI/UX 대표 프로젝트 섹션.</p>" },
+      contents: { title: "Contents",  html: "<p>콘텐츠 전략/제작 아카이브.</p>" },
+      profile:  { title: "Profile",   html: "<p>약력, 역량맵, 수상/논문 등.</p>" },
+      contact:  { title: "Contact",   html: "<p>연락처/협업 문의.</p>" }
+    };
+
+    const keysFromTabs = tabs.map(li => li.querySelector('button').dataset.target);
+    const getCenterKey = () => cards.find(c => c.classList.contains('card-center'))?.dataset.key || keysFromTabs[0];
+
+    const syncTabs = key => tabs.forEach(li => {
+      li.classList.toggle('active', li.querySelector('button').dataset.target === key);
+    });
+
+    const applyTheme = key => {
+      const cfg = THEMES[key] || THEMES.uiux;
+      root.classList.remove('theme-uiux','theme-contents','theme-profile','theme-contact');
+      root.classList.add(cfg.rootClass);
+      if (topImg) topImg.src = cfg.glassImg;
+      if (heroTitle) heroTitle.innerText = cfg.heroTitle;
+      if (heroSub)   heroSub.textContent = cfg.heroSub;
+    };
+
+    const setCenterTo = key => {
+      const order = cards.map(c => c.dataset.key);
+      const i = order.indexOf(key);
+      if (i < 0) return;
+      const arranged = [cards[(i+3)%4], cards[i], cards[(i+1)%4], cards[(i+2)%4]];
+      arranged[0].className = 'card card-left';
+      arranged[1].className = 'card card-center';
+      arranged[2].className = 'card card-right';
+      arranged[3].className = 'card card-far';
+      syncTabs(key); applyTheme(key);
+    };
+
+    const rotate = dir => {
+      const seq = cards.map(c => c.dataset.key);
+      const ci = seq.indexOf(getCenterKey());
+      setCenterTo(seq[(ci + (dir>0?1:-1) + 4) % 4]);
+    };
+
+    document.querySelector('.nav-arrow.prev')?.addEventListener('click', () => rotate(-1));
+    document.querySelector('.nav-arrow.next')?.addEventListener('click', () => rotate(1));
+    tabs.forEach(li => li.addEventListener('click', () => setCenterTo(li.querySelector('button').dataset.target)));
+
+    setCenterTo(document.querySelector('.tabs li.active button')?.dataset.target || keysFromTabs[0]);
+
+    // Modal
+    function createModal() {
+      const overlay = document.createElement('div');
+      overlay.className = 'modal-overlay';
+      overlay.setAttribute('role','dialog');
+      overlay.setAttribute('aria-modal','true');
+      overlay.innerHTML = `
+        <div class="modal-dialog" role="document">
+          <div class="modal-head">
+            <h3 class="modal-title">Title</h3>
+            <button class="modal-close" type="button" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" tabindex="0"></div>
+        </div>`;
+      (document.querySelector('.all-container') || document.body).appendChild(overlay);
+      return overlay;
+    }
+
+    const overlay = createModal();
+    const dialog  = overlay.querySelector('.modal-dialog');
+    const titleEl = overlay.querySelector('.modal-title');
+    const bodyEl  = overlay.querySelector('.modal-body');
+    const closeEl = overlay.querySelector('.modal-close');
+
+    const onOverlayClick = e => { if (!dialog.contains(e.target)) closeModal(); };
+    const onKeydown = e => {
+      if (e.key === 'Escape') { e.preventDefault(); closeModal(); }
+      if (e.key === 'Tab') {
+        const f = overlay.querySelectorAll('button,[href],input,textarea,[tabindex]:not([tabindex="-1"])');
+        const first = f[0], last = f[f.length-1];
+        if (!first || !last) return;
+        if (e.shiftKey && document.activeElement === first){ last.focus(); e.preventDefault(); }
+        else if (!e.shiftKey && document.activeElement === last){ first.focus(); e.preventDefault(); }
+      }
+    };
+
+    function openModal(key){
+      const data = MODALS[key] || {title:key, html:''};
+      titleEl.textContent = data.title;
+      bodyEl.innerHTML = data.html;
+      overlay.classList.add('is-open');
+      document.body.classList.add('body-locked');
+      closeEl.focus();
+      document.addEventListener('keydown', onKeydown);
+      overlay.addEventListener('click', onOverlayClick);
+    }
+    function closeModal(){
+      overlay.classList.remove('is-open');
+      document.body.classList.remove('body-locked');
+      document.removeEventListener('keydown', onKeydown);
+      overlay.removeEventListener('click', onOverlayClick);
+    }
+    closeEl.addEventListener('click', closeModal);
+
+    cards.forEach(card => card.addEventListener('click', () => openModal(card.dataset.key)));
+  });
+  </script>
+</body>
 </html>
