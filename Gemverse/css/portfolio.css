@@ -28,7 +28,11 @@
 
 /* theme backgrounds */
 .all-container::before{
-  content:""; position:absolute; inset:0; z-index:0; pointer-events:none; background:#f5f7f8;
+  height:100vh;
+  background-color: red;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .all-container.theme-uiux::before     { background: url('../images/pink_gradient.svg')   no-repeat top center / 1600px auto, #f5f7f8; }
 .all-container.theme-contents::before { background: url('../images/mint_gradient.svg')   no-repeat top center / 1600px auto, #f5f7f8; }
@@ -46,10 +50,13 @@ html, body{
 
 /* top visual */
 .top-container{
-  position:absolute; top:var(--hero-top); left:30%; transform:translate(-50%, var(--hero-translate-y));
-  z-index:1; pointer-events:none;
+  position:absolute;
+  Top:0;
+  left:0;
+  right:0;
+  z-index:1; 
 }
-.mint-stroke{ width:150%; height:90%; display:block; }
+.mint-stroke{ width:100%;}
 
 /* header */
 .page-header{ padding:18px 0 0; }
